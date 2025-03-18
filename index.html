@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tabs-container">
+
+        <div class="tab-buttons" role="tablist" aria-label="Tab navigation">
+            <button class="tab-button active" id="tab-1-button" role="tab" aria-controls="tab-1" aria-selected="true"
+                data-target="tab-1">
+                Lorem Ipsum
+            </button>
+            <button class="tab-button" id="tab-2-button" role="tab" aria-controls="tab-2" aria-selected="false"
+                data-target="tab-2">
+                Viverra met
+            </button>
+            <button class="tab-button" id="tab-3-button" role="tab" aria-controls="tab-3" aria-selected="false"
+                data-target="tab-3">
+                Pellentesque
+            </button>
+        </div>
+
+        <div class="content-container">
+            <div class="tab-content active" id="tab-1" role="tabpanel" aria-labelledby="tab-1-button">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta provident veniam perspiciatis magni
+                    non! Iure nam facere, cumque ut maiores hic earum sequi est id quos qui fugiat! Eligendi, ex! Harum
+                    perferendis dolor cum sapiente? Necessitatibus provident harum aspernatur neque magnam repellendus
+                    beatae doloribus, ut delectus atque expedita natus eius blanditiis minima soluta incidunt dolorem!
+                    Fuga dolore consequatur dicta laboriosam.</p>
+            </div>
+            <div class="tab-content" id="tab-2" role="tabpanel" aria-labelledby="tab-2-button">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsam quaerat numquam, saepe quod
+                    blanditiis recusandae, itaque vitae, sequi perspiciatis expedita. Quidem excepturi commodi ad labore
+                    dolore minima quas minus!</p>
+            </div>
+            <div class="tab-content" id="tab-3" role="tabpanel" aria-labelledby="tab-3-button">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, earum doloribus. Exercitationem
+                    quibusdam laborum, quos eveniet libero iusto vitae reiciendis voluptatibus accusamus excepturi
+                    blanditiis eligendi quas, ex hic vero beatae. Enim, error officia. Tempore quaerat, possimus itaque
+                    quas, provident rem fuga obcaecati nulla reiciendis corrupti deleniti ut aperiam magnam dicta
+                    mollitia maiores qui assumenda magni voluptatibus</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="add-tab-btn" aria-label="Add a new tab">
+        Add New Tab
+    </button>
+    <script src="script.js"></script>
+</body>
+
+</html>
