@@ -39,17 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         tabCount++;
-
         const newTabButton = document.createElement("button");
         newTabButton.classList.add("tab-button");
         newTabButton.id = `tab-${tabCount}-button`;
-        Object.assign(newTabButton, {
-            role: "tab",
-            "aria-controls": `tab-${tabCount}`,
-            "aria-selected": "false",
-            "data-target": `tab-${tabCount}`,
-            textContent: tabTitle
-        });
+        newTabButton.setAttribute("role", "tab");
+        newTabButton.setAttribute("aria-controls", `tab-${tabCount}`);
+        newTabButton.setAttribute("aria-selected", "false");
+        newTabButton.setAttribute("data-target", `tab-${tabCount}`);
+        newTabButton.textContent = tabTitle;
 
         const newTabContent = document.createElement("div");
         newTabContent.classList.add("tab-content");
@@ -88,4 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     addTabButton.addEventListener("click", createNewTab);
+
+    const firstButton = document.querySelector(".tab-button");
+    if (firstButton) firstButton.click();
 });
